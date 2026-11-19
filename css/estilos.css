@@ -1,0 +1,46 @@
+:root {
+    --color-primario: #0d6efd;
+    --color-fondo: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    opacity: 0.85;
+}
+
+.card {
+    border-radius: 0.75rem;
+}
+
+.card-header {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+}
+
+.comentario-item {
+    transition: transform 0.15s ease-in-out;
+}
+
+.comentario-item:hover {
+    transform: translateX(3px);
+}
