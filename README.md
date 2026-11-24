@@ -18,7 +18,7 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 |---|---|---|---|
 | 1 | Anthony Anderson Ysabel Alcántara 2023-1244 | Diseño y apariencia (plantilla Bootstrap, menú, estilos) | ✅ Terminado |
 | 2 | Yemary De La Cruz 2025-1244 | Formulario de comentarios y validación con JavaScript | ✅ Terminado |
-| 3 | Julio Enrique Rijo Cabral 2025-0018 | Backend: recibir y almacenar los comentarios con PHP | ⬜ Pendiente |
+| 3 | Julio Enrique Rijo Cabral 2025-0018 | Backend: recibir y almacenar los comentarios con PHP | ✅ Terminado |
 | 4 | Luis Kevin Díaz 2025-2012 | Mostrar los comentarios publicados y actualizar el contador | ⬜ Pendiente |
 | 5 | Tom Samuel Natera gil 2024-1809 | Publicación en CodeSandbox y pruebas finales | ⬜ Pendiente |
 
@@ -40,11 +40,8 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 ## Lo que falta por hacer
 
 ### Integrante 3: Backend (PHP)
-- ⬜ Crear `guardar_comentario.php` en la raíz del proyecto.
-- ⬜ Recibir `$_POST['nombre']` y `$_POST['comentario']`.
-- ⬜ Validar en PHP que no lleguen vacíos.
-- ⬜ Guardar el comentario con nombre y fecha (en archivo o base de datos).
-- ⬜ Redirigir a `index.php` después de guardar.
+- ✅ Recibir y validar `nombre` y `comentario` en `guardar_comentario.php`.
+- ✅ Guardar los comentarios con PDO y SQLite y redirigir a `index.php`.
 
 ### Integrante 4: Visualización de comentarios
 - ⬜ Leer los comentarios guardados.
@@ -64,7 +61,8 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 ```
 Sistema-comentarios-php/
 ├── index.php                  # Página principal
-├── guardar_comentario.php     # Recibe y guarda los comentarios (pendiente)
+├── guardar_comentario.php     # Recibe y guarda los comentarios
+├── conexion.php               # Conexión y esquema SQLite
 ├── css/
 │   └── estilos.css            # Estilos personalizados
 ├── js/
@@ -74,11 +72,33 @@ Sistema-comentarios-php/
 
 ## Cómo ejecutar el proyecto en local
 
+Se requiere PHP con las extensiones PDO y PDO SQLite habilitadas. El directorio
+que contiene el proyecto debe permitir que PHP cree una carpeta hermana llamada
+`<nombre-del-proyecto>-data`, donde se guarda `comentarios.sqlite`. Configura el
+servidor para que solo el directorio del proyecto sea público, no su directorio
+padre ni la carpeta de datos.
+
 ```bash
 php -S localhost:8000
 ```
 
 Luego abre http://localhost:8000/index.php en el navegador.
+
+### Consulta para el integrante 4
+
+Incluye `conexion.php` y utiliza `obtenerConexion()` para consultar la tabla
+`comentarios`: `id` (entero), `nombre` (texto), `comentario` (texto) y `fecha`
+(texto UTC en formato `YYYY-MM-DD HH:MM:SS`). Por ejemplo:
+
+```php
+require_once __DIR__ . '/conexion.php';
+$comentarios = obtenerConexion()->query(
+    'SELECT id, nombre, comentario, fecha FROM comentarios ORDER BY id DESC'
+)->fetchAll(PDO::FETCH_ASSOC);
+```
+
+Al mostrar nombre o comentario en HTML, escapa ambos valores con
+`htmlspecialchars` para evitar que se interpreten como código HTML.
 
 ## Tecnologías
 
