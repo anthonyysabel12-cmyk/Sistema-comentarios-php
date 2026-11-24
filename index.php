@@ -68,9 +68,23 @@
                         <!-- ========================================================= -->
                         <!-- INICIO ZONA INTEGRANTE 2: FORMULARIO Y VALIDACIONES JS    -->
                         <!-- ========================================================= -->
-                        <div class="alert alert-secondary text-center mb-0" role="alert">
-                            Espacio reservado para el formulario de comentarios (Integrante 2).
-                        </div>
+                        <form id="formComentario" action="guardar_comentario.php" method="POST" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="50">
+                                <div class="invalid-feedback">Por favor escribe tu nombre.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="comentario" class="form-label fw-semibold">Comentario</label>
+                                <textarea class="form-control" id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario" maxlength="500"></textarea>
+                                <div class="invalid-feedback">Por favor escribe tu comentario.</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="bi bi-send me-2"></i>Enviar
+                            </button>
+                        </form>
                         <!-- ========================================================= -->
                         <!-- FIN ZONA INTEGRANTE 2                                     -->
                         <!-- ========================================================= -->
