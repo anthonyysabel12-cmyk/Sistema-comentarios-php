@@ -44,9 +44,9 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 - ✅ Guardar los comentarios con PDO y SQLite y redirigir a `index.php`.
 
 ### Integrante 4: Visualización de comentarios
-- ⬜ Leer los comentarios guardados.
-- ⬜ Mostrarlos en la zona "Comentarios publicados" de `index.php`.
-- ⬜ Actualizar el contador "Total" con la cantidad real de comentarios.
+- ✅ Leer los comentarios guardados.
+- ✅ Mostrarlos en la zona "Comentarios publicados" de `index.php`.
+- ✅ Actualizar el contador "Total" con la cantidad real de comentarios.
 
 ### Integrante 5: Publicación y pruebas
 - ⬜ Subir el proyecto a CodeSandbox.
