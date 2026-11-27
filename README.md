@@ -25,7 +25,7 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 
 | # | Integrante | Responsabilidad | Estado |
 |---|---|---|---|
-| 1 | Anthony Anderson Ysabel Alcántara 2023-1244 | Diseño y apariencia (plantilla Bootstrap, menú, estilos) | ✅ Terminado |
+| 1 | Anthony Anderson Ysabel Alcántara 2023-1938 | Diseño y apariencia (plantilla Bootstrap, menú, estilos) | ✅ Terminado |
 | 2 | Yemary De La Cruz 2025-1244 | Formulario de comentarios y validación con JavaScript | ✅ Terminado |
 | 3 | Julio Enrique Rijo Cabral 2025-0018 | Backend: recibir y almacenar los comentarios con PHP | ✅ Terminado |
 | 4 | Luis Kevin Díaz 2025-2012 | Mostrar los comentarios publicados y actualizar el contador | ✅ Terminado |
