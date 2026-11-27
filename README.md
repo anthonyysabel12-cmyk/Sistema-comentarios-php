@@ -2,6 +2,11 @@
 
 Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar comentarios usando HTML, CSS (Bootstrap), JavaScript y PHP.
 
+## Enlaces de CodeSandbox
+
+- Enlace de visualización: https://vr4r5l-8080.csb.app/
+- Enlace de estructura: https://codesandbox.io/p/devbox/vr4r5l
+
 ## Datos del trabajo
 
 | Campo | Información |
@@ -19,8 +24,8 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 | 1 | Anthony Anderson Ysabel Alcántara 2023-1244 | Diseño y apariencia (plantilla Bootstrap, menú, estilos) | ✅ Terminado |
 | 2 | Yemary De La Cruz 2025-1244 | Formulario de comentarios y validación con JavaScript | ✅ Terminado |
 | 3 | Julio Enrique Rijo Cabral 2025-0018 | Backend: recibir y almacenar los comentarios con PHP | ✅ Terminado |
-| 4 | Luis Kevin Díaz 2025-2012 | Mostrar los comentarios publicados y actualizar el contador | ⬜ Pendiente |
-| 5 | Tom Samuel Natera gil 2024-1809 | Publicación en CodeSandbox y pruebas finales | ⬜ Pendiente |
+| 4 | Luis Kevin Díaz 2025-2012 | Mostrar los comentarios publicados y actualizar el contador | ✅ Terminado |
+| 5 | Tom Samuel Natera gil 2024-1806 | Publicación en CodeSandbox y pruebas finales | ✅ Terminado |
 
 ## Lo que se ha hecho
 
@@ -37,8 +42,6 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 - ✅ Validación con JavaScript (`js/validacion.js`): los campos no pueden estar vacíos y se marcan en rojo o verde.
 - ✅ El formulario envía por método POST a `guardar_comentario.php` con los campos `nombre` y `comentario`.
 
-## Lo que falta por hacer
-
 ### Integrante 3: Backend (PHP)
 - ✅ Recibir y validar `nombre` y `comentario` en `guardar_comentario.php`.
 - ✅ Guardar los comentarios con PDO y SQLite y redirigir a `index.php`.
@@ -49,12 +52,9 @@ Práctica grupal de Desarrollo Web: Sistema para recibir, almacenar y publicar c
 - ✅ Actualizar el contador "Total" con la cantidad real de comentarios.
 
 ### Integrante 5: Publicación y pruebas
-- ⬜ Subir el proyecto a CodeSandbox.
-- ⬜ Copiar el enlace y pegarlo en la tabla de datos del trabajo.
-- ⬜ Probar el sistema completo en el servidor remoto.
-
-### Todos los integrantes
-- ⬜ Probar el sistema en el servidor remoto y dejar un comentario publicado.
+- ✅ Subir el proyecto a CodeSandbox.
+- ✅ Copiar el enlace y pegarlo en la tabla de datos del trabajo.
+- ✅ Probar el sistema completo en el servidor remoto.
 
 ## Estructura del proyecto
 
